@@ -12,3 +12,8 @@ def character_counter(text): # take book content and count all characters ignori
         else:
             num_characters[character] = 1
     return num_characters
+
+def data_sorter(num_characters): # take counted characters and sort them by amount (descending)
+    character = num_characters[0]
+    sorted_data = sorted(character.items(), key=lambda x: x[1], reverse=True)
+    return sorted_data
